@@ -19,6 +19,8 @@
 **Decision**: empty / punctuation-only -> True; digits count as characters; non-string -> TypeError
 
 ## Second Largest
-
+**What was hard**: the "demote old maximum" case——[10, 8, 12] must give 10 and not 8. Also uniqueness—[5, 5, 3] must give 3 and not 5.
+**What I tried**: a two-pass idea (find largest, then largest < largest) but that needed max(), which is forbidden. Also, I tried removing duplicates but it needed set(), but the constraints pushed me to a single pass without helper functions.
+**What worked**: one pass with largest/second trackers, None to "unset" sentinel, explicit guard so an old maximum only demotes to second when it beats the current second, and v == largest duplicates ignored.
 **Decision**: None for anything fewer than two unique values.
 

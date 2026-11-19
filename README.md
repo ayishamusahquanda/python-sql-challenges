@@ -11,9 +11,10 @@
 ## Progress
 
 ### Python
-- [x] ch01 — ...
-- [x] ch02 — ...
-- [x] ch03 — ...
+- [x] ch01 — Leap Year
+- [x] ch02 — Most Common Word
+- [x] ch03 — Palindrome
+- [x] ch04 — Second Largest
 
 ### SQL
 - [ ] ch01 — ...
