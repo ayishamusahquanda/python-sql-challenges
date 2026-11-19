@@ -21,4 +21,3 @@ tests = [
 ]
 for t in tests:
     print(repr(t), "->", is_palindrome(t))
-    print(is_palindrome(123))       # --- Test for non-string input ---

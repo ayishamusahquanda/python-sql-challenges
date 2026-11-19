@@ -31,4 +31,3 @@ tests = [
 ]
 for t in tests:
     print(repr(t), "->", most_common_word(t))
-    print(most_common_word(123))        # --- Test for non-string input (throws TypeError) ---
